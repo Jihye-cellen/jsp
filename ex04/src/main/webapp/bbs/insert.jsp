@@ -6,7 +6,7 @@
 		<form name="frm" method="post">
 			<input name="write" value="${user.uid}" type="hidden">
 			<input name="title" placeholder="제목을 입력하세요" class="form-control mb-3">
-			<textarea name="contents" rows="15" class="form-control" placeholder="내용을 입력하세요"></textarea>
+			<textarea name="contents" rows="15" class="form-control" placeholder="내용을 입력하세요">${user.contents}</textarea>
 			<div class="text-center mt-2">
 				<button type="submit" class="btn btn-outline-danger">저장</button>
 				<button type="reset" class="btn btn-outline-secondary">취소</button>

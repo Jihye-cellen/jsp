@@ -49,6 +49,8 @@ public class BBSServlet extends HttpServlet {
 			dis.forward(request, response);
 			break;
 		case "/bbs/update":
+			String title= request.getParameter("title");
+			String contents=request.getParameter("contents");
 			bid = request.getParameter("bid");
 			BBSVO bbs =dao.read(Integer.parseInt(bid));
 			request.setAttribute("bbs", bbs);

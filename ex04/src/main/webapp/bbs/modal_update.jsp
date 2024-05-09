@@ -12,7 +12,7 @@
       </div>
       <div class="modal-body">
       	<span>${user.uname}(${uid})</span><br><hr>
-        <textarea id="contents" rows="5" class="form-control">"${contents}"</textarea>
+        <textarea id="contents" rows="5" class="form-control">"${comments.contents}"</textarea>
       </div>
       <div class="modal-footer">
         <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
